@@ -1,0 +1,493 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+html,body{
+     width: 100%;
+     height: 100vh;
+     color: #232F55;
+}
+nav{
+     background: linear-gradient(to right, #00095e, #0c0c1f);
+}
+@font-face {
+     font-family: 'Jack';
+     src: url(Assets/Fonts/JosefinSans-VariableFont_wght.ttf);
+}
+@font-face {
+     font-family: 'Mulish';
+     src: url(Assets/Fonts/Mulish-VariableFont_wght.ttf);
+}
+
+.dropdownmenu ul, .dropdownmenu li{
+     margin: 0;
+     padding: 0;
+
+}
+.dropdownmenu ul{
+     list-style: none;
+     width: 100%;
+}
+.dropdownmenu li{
+     float: left;
+     position: relative;
+     width: auto;
+}
+.robot-maindiv{
+     height: 100vh;
+}
+.dropdownmenu a{
+     display: block;
+     font-weight: 400;
+     font-family: 'Jack';
+     padding: 15px 55px;
+     text-decoration: none;
+     transition: all 0.25s ease;
+}
+#submenu{
+     left: 0;
+     opacity: 0;
+     position: absolute;
+     top: 35px;
+     visibility: hidden;
+     z-index: 1;
+     box-shadow: 0 0 1px black;
+     width: 330%;
+     transition: 0.8s;
+}
+#submenu>li{
+     background-color: white !important;
+     width: 100%;
+}
+#submenu>li>a{
+
+color: #00095e !important;
+}
+li:hover ul#submenu{
+     opacity: 1;
+     top: 129%;
+     visibility: visible;
+}
+#submenu li{
+     float: none;
+     width: 100% !important;   
+}
+#submenu>li>a:hover{
+     padding-left: 10% !important;
+}
+.underline>li>a::after{
+     content: "";
+     position: absolute;
+     background-color: white;
+     height: 3px;
+     width: 0;
+     left: 0;
+     bottom: 8px;
+     right: 5px;
+     z-index: 1;
+     transition: all .5s ease-out 0s;
+     box-sizing: border-box;
+     cursor: pointer;
+}
+.underline>li>a:hover::after{
+     width: 100%;
+}
+.butn{
+     border: solid #fff;
+     font-family: 'Jack';
+     cursor: pointer;
+     transition: color 0.4s linear;
+     z-index: 1;
+     width: 20%;
+     padding-top: 1%;
+     padding-bottom: 1%;
+}
+@media only screen and (min-width: 1200px) {
+     .Email{
+          width: 27% !important;
+     }
+     .arrow{
+          width: 32% !important;
+     }
+}
+@media only screen and (max-width: 1100px) {
+     .Email{
+          width: 34% !important;
+          
+     }
+     .arrow{
+          width: 10% !important;
+     }
+}
+@media only screen and (max-width: 992px) {
+     .Email{
+          width: 90% !important;
+     }
+     .arrow{
+          width: 10% !important;
+     }
+     .butn{
+         width: 30%;
+         margin-left: 10%;    
+     }
+     .robot-text>h1{
+          font-size: 200% !important;
+     }
+     .robot-text>p{
+          font-size: 9px !important;
+     }
+     .service>h1{
+          font-size: 200% !important;
+     }
+     .card-1>div>img{
+          width: 40%;
+     }
+     .Nax-1, .card-body-1>h4{
+          display: none !important;
+          font-size: 1px !important;
+     }
+     .Grow{
+          font-size: 150% !important;
+     }
+     .industries{
+          font-size: 130% !important;
+     }
+     .plane{
+          width: 100% !important;
+     }
+     .navigate{
+          margin-left: -15% !important;
+     }
+      .Nax-p{
+          width: 100% !important;
+      }
+}
+@media only screen and (max-width: 768px) {
+     .Email{
+          width: 100% !important;
+     }
+     .arrow{
+          width: 0% !important;
+      }
+}
+@media only screen and (max-width: 576px) {
+     
+     .plane{
+          width: 100% !important;
+     }
+     .Kol{
+          font-size: 130% !important;
+     }
+     .Quote{
+          width: 80% !important;
+     }
+     .number{
+          font-size: 150% !important;
+     }
+     .number-p{
+          font-size: 80% !important;
+     }
+     .stuff{
+          font-size: 130% !important;
+     }
+     
+     .navigate{
+          margin-left: 0% !important;
+     }
+.robot-button{
+     width: 150% !important;
+}
+.LM{
+     width: 100% !important;
+}
+.service>h1{
+     font-size: 100% !important;
+}
+.inspire{
+     width: 100% !important;
+}.video-div{
+     width: 30% !important;
+}
+.innovate{
+     font-size: 130% !important;
+}
+.butn3{
+     width: 60% !important;
+}
+.Duis{
+     width: 100% !important;
+}
+.icons{
+     margin-top: 40% !important;
+}
+.arrow{
+     margin-top: 2% !important;
+}
+}
+.butn:hover{
+     color: #FF4495 !important;
+}
+.butn::before{
+     content: "";
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background: white;
+     transition: transform 0.5s;
+     transform-origin: 0 0;
+     transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+     z-index: -1;
+}
+.butn2::before{
+     transform: scaleY(0);
+}
+
+.butn2:hover::before{
+     transform: scaleY(1);
+}
+.robot-maindiv{
+     background: linear-gradient(to right, #00095e 0%, #0c0c1f 100%);
+}
+.robot-text>h1{
+     font-family: 'Jack';
+     font-size: 400%;
+}
+.robot-text>p{
+     font-family: 'Mulish';
+     font-size: 18px;
+     line-height: 180%;
+}
+.robot-subdiv{
+     margin-left: -25%;
+}
+.robot-button{
+     background: linear-gradient(to bottom, #ff4495 0%, #ff6d6d 100%);
+     cursor: pointer;
+}
+.service{
+     margin-top: 7%;
+     font-family: 'Jack';
+}
+.service>p{
+     color: #FF4495;
+     font-weight: bold;
+}
+.service>h1{
+     font-size: 3rem;
+}
+.IT{
+     font-family: 'Jack';
+}
+.box{
+     box-shadow: 0 0 4px gainsboro;
+     padding: 10%;
+     border-radius: 50%;
+}
+.Nax-1{
+     font-size: 16px;
+     font-family: 'Mulish';
+     color: #00095e !important;
+}
+.card-1{
+     cursor: pointer;
+}
+.card-1:hover .card-body>h4{
+     color: white !important;
+     transition: .7s;
+}
+.card-1:hover .card-body>p{
+     color: white !important;
+     transition: .7s;
+}
+     .card-1:hover{ 
+     background: linear-gradient(to bottom, #ff4495 0%, #ff6d6d 100%);
+     transition: all .9s ease-in-out;
+}
+.industry{
+     background: linear-gradient(to right, #0c0c1f 0%, #00095e 100%);
+     padding-top: 10%;
+     padding-bottom: 3%;
+}
+.plane{
+     cursor: pointer;
+}
+.plane:hover{
+     background: rgba(255,255,255,0.03) !important;
+     border: 1px solid transparent !important;
+     transition: .5s ease-in-out;
+     box-shadow: 0 0 0.5px;
+}
+.GSN:hover{
+     letter-spacing: 1.1px;
+     transition: .7s;
+}
+.butn1{
+     cursor: pointer;
+     transition: 0.4s linear;
+     z-index: 1;
+     padding-top: 1%;
+     padding-bottom: 1%;
+}
+.butn1:hover{
+     color: #fff !important;
+     border: none !important;
+}
+.butn1::before{
+     content: "";
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background: #00095e;
+     transition: transform 0.5s;
+     transform-origin: 0 0;
+     transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+     z-index: -1;
+}
+.butn1::before{
+     transform: scaleY(0);
+}
+
+.butn1:hover::before{
+     transform: scaleY(1);
+}
+.video{
+     background-image: url(Assets/Images/6th\ Assignment\ Web\ &\ App\ \(Bootstrap\)\ Image\ 17.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     object-fit: cover;
+}
+.video-div{
+     background: linear-gradient(to bottom, #ff4495 0%, #ff6d6d 100%);
+     border: 1px solid white;
+     border-radius: 50%;
+}
+.butn3{
+     border: 3px solid white;
+     cursor: pointer;
+     transition: 0.4s linear;
+     z-index: 1;
+     padding-top: 1%;
+     padding-bottom: 1%;
+     width: 18%;
+}
+.butn3:hover{
+     color: #fff !important;
+     border: none !important;
+}
+.butn3::before{
+     content: "";
+     position: absolute;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background: #00095e;
+     transition: transform 0.5s;
+     transform-origin: 0 0;
+     transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+     z-index: -1;
+}
+.butn3::before{
+     transform: scaleX(0);
+}
+
+.butn3:hover::before{
+     transform: scaleX(1);
+}
+.foot-ul:hover{
+     text-decoration: underline;
+     transition: .5s;
+}
+.ins{
+     background-color: #00095e58;
+     height: 100%;
+     cursor: pointer;
+}
+.box:hover .ins{
+     background-color: #ff4495a9 !important;
+     transition: .9s;
+}
+.inspire{
+     height: 100% !important;
+}
+.inspire:hover .zoom{
+     transform: scale(1.1);
+     transition: .8s;
+}
+.icon:hover{
+     color: #FF4495;
+     transform: scaleX(-1);
+     transition: .8s;
+}
+.Email:focus{
+     outline: none;
+}
+.child1{
+     background-image: url(Assets/Images/6th\ Assignment\ Web\ &\ App\ \(Bootstrap\)\ Image\ 14.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 100%;
+     width: 100%;
+     border-radius: 10px;
+}
+.child2{
+     background-image: url(Assets/Images/6th\ Assignment\ Web\ &\ App\ \(Bootstrap\)\ Image\ 15.webp);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 100%;
+     width: 100%;
+     border-radius: 10px;
+}
+.child3{
+     background-image: url(Assets/Images/6th\ Assignment\ Web\ &\ App\ \(Bootstrap\)\ Image\ 16.webp);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 100%;
+     width: 100%;
+     border-radius: 10px;
+}
+.box:hover .child1{
+     transform: scale(1.1);
+     transition: .7s;
+}
+.box:not(:hover) .child1{
+     transform: scale(1);
+     transition: .7s;
+}
+.box{
+     box-shadow: none !important;
+     cursor: pointer;
+}
+.parent{
+     height: 50vh; 
+     width: 100%;
+     overflow: hidden;
+}
+.box:hover .child2{
+     transform: scale(1.1) !important;
+     transition: .7s !important;
+}
+.box:not(:hover) .child2{
+     transform: scale(1) !important;
+     transition: .7s !important;
+}
+.box:hover .child3{
+     transform: scale(1.1) !important;
+     transition: .7s !important;
+}
+.box:not(:hover) .child3{
+     transform: scale(1) !important;
+     transition: .7s !important;
+}
+.Map>li>a{
+     color: #00095e;
+}
